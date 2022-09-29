@@ -1,3 +1,4 @@
+/* General */
 html,
 body {
     margin: 0;
@@ -10,4 +11,70 @@ body {
     font-size: 0.875rem;
     line-height: 1.4;
     color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button img,
+p img {
+    display: inline;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+input::placeholder {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+/* Typography */
+h1,
+h5 {
+    font-family: 'Limelight', cursive;
+    margin: 0;
+    color: #fff;
+}
+
+h3,
+h4 {
+    margin: 0.5em 0;
+    font-size: 1.125rem;
+}
+
+h1 {
+    font-size: 2.6875rem;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+h4 {
+    color: #dfdddd;
+    font-weight: 700;
+}
+
+h5,
+p {
+    font-size: 0.875rem;
+}
+
+p {
+    margin: 0.5em 0;
+    color: #6b7280;
 }
