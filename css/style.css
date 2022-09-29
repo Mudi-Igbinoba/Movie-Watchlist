@@ -11,6 +11,7 @@ body {
     font-size: 0.875rem;
     line-height: 1.4;
     color: #000;
+    background-color: #1c1c1c;
 }
 
 a {
@@ -77,4 +78,149 @@ p {
 p {
     margin: 0.5em 0;
     color: #6b7280;
+}
+
+/* Homepage */
+header,
+main {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+/* Header */
+header {
+    background-image: url(/images/header-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6em 0;
+    position: relative;
+}
+
+.heading-flex {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    position: absolute;
+    width: 90%;
+    bottom: -1.5em;
+}
+
+form input {
+    padding: 1em 0;
+    border: none;
+    width: 80%;
+    border-top: 1px solid #d1d5db;
+    border-bottom: 1px solid #d1d5db;
+}
+
+form span {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 5%;
+    border: 1px solid #d1d5db;
+    border-right: none;
+}
+
+form button {
+    border: 1px solid #d1d5db;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    width: 15%;
+    background-color: #f9fafb;
+    color: #374151;
+}
+
+/* Main */
+main {
+    background-color: #fff;
+    min-height: calc(70vh - 10em);
+    padding: 4em 0;
+}
+
+#defaultSect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 4em auto;
+}
+
+#noDataSect {
+    text-align: center;
+    margin: 6em auto;
+}
+
+.movieData {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 0;
+    border-bottom: 1.5px solid #e5e7eb;
+}
+
+.moviePoster {
+    width: 20%;
+    object-fit: cover;
+}
+
+.movieDetails {
+    width: 70%;
+}
+
+.movieHeading {
+    display: flex;
+    align-items: center;
+}
+
+.movieTitle {
+    /* justify-self: start; */
+}
+
+.movieRate {
+    margin-left: 1.2em;
+    font-size: 0.75rem;
+    color: #111827;
+}
+
+.movieInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.movieInfo p,
+.movieInfo .addBtn {
+    font-size: 0.75rem;
+    color: #111827;
+}
+
+.addBtn {
+    display: flex;
+    align-items: center;
+}
+
+.addBtn img {
+    margin-bottom: 0.2em;
+}
+
+.addBtn span {
+    margin-left: 0.6em;
+}
+
+.movieSub {
+    width: 80%;
 }
