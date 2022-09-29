@@ -4,10 +4,34 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Limelight&display=swap"
+            rel="stylesheet"
+        />
+        <title>Movie Watchlist - Home</title>
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body>
+        <header class="container" id="header">
+            <h1><a href="index.html">Find your film</a></h1>
+            <h4><a href="watchlist.html">My Watchlist</a></h4>
+            <form>
+                <span>
+                    <img src="images/search-icon.png" alt="" />
+                </span>
+
+                <input
+                    type="search"
+                    name="search"
+                    id="searchText"
+                    placeholder="Search for a movie"
+                />
+
+                <button type="submit" id="searchBtn">Search</button>
+            </form>
+        </header>
         <script src="js/index.js"></script>
     </body>
 </html>
