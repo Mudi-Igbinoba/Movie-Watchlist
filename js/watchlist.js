@@ -3,7 +3,7 @@ const noMovieText = `
     <section id="defaultSect" class="container">
         <h4>Your watchlist is looking a little empty...</h4>
         <a href="index.html" class="addToWatchlist">
-            <img src="/images/add-icon.png" alt="Add Icon">
+            <img src="images/add-icon.png" alt="Add Icon">
             
             <p>
                 Let’s add some movies!
