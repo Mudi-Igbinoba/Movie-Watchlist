@@ -19,7 +19,10 @@ const movieIDs = JSON.parse(localStorage.getItem('movies'));
 //Function that displays the watchlist
 const displayWatchlist = async () => {
     //Conditional for if movieIds array is empty or not
-    if (movieIDs.length > 0) {
+    if (movieIDs === null || movieIDs.length === 0) {
+        // fills the main section with the no data html
+        watchlistMain.innerHTML = noMovieText;
+    } else {
         watchlistMain.innerHTML = ''; // Deletes content in main
 
         // Maps through ids in the array
@@ -94,9 +97,6 @@ const displayWatchlist = async () => {
                 });
             });
         }
-    } else {
-        // fills the main section with the no data html
-        watchlistMain.innerHTML = noMovieText;
     }
 };
 
