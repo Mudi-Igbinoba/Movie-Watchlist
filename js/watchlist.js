@@ -14,15 +14,12 @@ const noMovieText = `
 const watchlistMain = document.getElementById('watchlistMain');
 const apiKey = 'db7f8141';
 //Grabs the movieIDs array from localStorage
-const movieIDs = JSON.parse(localStorage.getItem('movies'));
+const movieIDs = JSON.parse(localStorage.getItem('movies')) || [];
 
 //Function that displays the watchlist
 const displayWatchlist = async () => {
     //Conditional for if movieIds array is empty or not
-    if (movieIDs === null || movieIDs.length === 0) {
-        // fills the main section with the no data html
-        watchlistMain.innerHTML = noMovieText;
-    } else {
+    if (movieIDs.length > 0) {
         watchlistMain.innerHTML = ''; // Deletes content in main
 
         // Maps through ids in the array
@@ -97,6 +94,9 @@ const displayWatchlist = async () => {
                 });
             });
         }
+    } else {
+        // fills the main section with the no data html
+        watchlistMain.innerHTML = noMovieText;
     }
 };
 
