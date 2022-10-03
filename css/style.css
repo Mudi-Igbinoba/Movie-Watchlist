@@ -127,7 +127,7 @@ main {
 }
 /* Header */
 header {
-    background-image: url(../images/header-img.png);
+    background-image: url('../images/header-img.png');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 6em 0;
