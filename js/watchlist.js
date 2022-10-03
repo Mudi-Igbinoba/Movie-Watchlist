@@ -26,7 +26,7 @@ const displayWatchlist = async () => {
         for (id of movieIDs) {
             //fetches movie details for each of the ids
             const res = await fetch(
-                `http://www.omdbapi.com/?apikey=${apiKey}&i=${id}`
+                `https://www.omdbapi.com/?apikey=${apiKey}&i=${id}`
             );
             const data = await res.json();
             const { Title, imdbID, Genre, Plot, Poster, Runtime, imdbRating } =
