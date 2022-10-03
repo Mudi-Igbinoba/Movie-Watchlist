@@ -27,6 +27,11 @@ const addMovieToWatchlist = () => {
             //Adds each of the ids to the movieIDs array
             movieIDs.push(e.id);
 
+            //Removes duplicate ids from array
+            movieIDs = movieIDs.filter((id, index) => {
+                return movieIDs.indexOf(id) === index;
+            });
+
             //adds the movieIDs array to localstorage
             localStorage.setItem('movies', JSON.stringify(movieIDs));
         });
